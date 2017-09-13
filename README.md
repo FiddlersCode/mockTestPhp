@@ -26,7 +26,7 @@ The   stock   service   will   get   the   amount   of   stock as an integer  fo
 `getStock($productId)`
 
 #### Task
-Build   a   `Product`   class   that   takes   the   services   as   a   constructor   arguments   and does   the   following:
+Build   a   `Product`   class   that   takes   the   `ProductService`   as   a   constructor   argument   and does   the   following:
 
 #### Requirement   1
 Write   a   method   that   gets   the   total   price   for   a   product (price +  VAT).
@@ -36,7 +36,7 @@ Write   a   method   that   gets   the   product   description   from   `Product
 description   then   return   the   product   name. 
 
 #### Requirement   3
-Write   a   `getStock()` method   that   takes   a   product   id   as   an   argument   and   gets   the   stock   remaining   for   that product   and   returns   the   following   message:
+Add the `StockService` to the `Product` class's constructor arguments.  Write   a   `getStock()` method   that   takes   a   product   id   as   an   argument   and   gets   the   stock   remaining   for   that product   and   returns   the   following   message:
 
 - When   >   5   in   stock   return   “In   Stock”
 - When   <   5   but   >   1   in   stock   return   “Warning   very   low   stock!”
